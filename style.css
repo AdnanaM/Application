@@ -1,0 +1,77 @@
+body{
+    border: 1px solid black;
+    padding: 5px;
+}
+.form-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+label, ::placeholder, select{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #808080;
+}
+
+label{
+    width: 20%;
+    display: inline-grid;
+    place-items: flex-start;
+}
+
+input, select{
+    width: 75%;
+}
+
+.multi-button {
+    filter: drop-shadow(3px 10px 15px rgba(0, 0, 0, 0.45));
+    height: 100px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 2%;
+}
+
+.multi-button button{
+    height: 50px;
+    width: 100px;
+    background: linear-gradient(to bottom, #bada55, #da55bb);
+    font-weight: bold;
+    color: white;
+    font-size: 16px;
+    border: none;
+    margin: -5px; 
+    padding: 0;
+    stroke: black;
+    outline: none;
+}
+.multi-button :nth-child(1){
+    border-radius: 20px 0 0 20px;
+}
+
+.multi-button :nth-child(3){
+    border-radius: 0 20px 20px 0;
+}
+
+button:hover{
+    cursor: pointer;
+    filter: drop-shadow(3px 5px 5px rgba(0, 0, 0, 0.45));
+}
+
+button:active{
+    filter: none;
+    transform: scale(.95);
+}
+
+
+@media only screen and (max-width: 1095px){
+    .form-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (max-width: 750px){
+    .form-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

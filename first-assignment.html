@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Assignment</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="multi-button">
+        <button type="submit" class="add-button">Add materials</button>
+        <button type="submit" class="order-button">Order material</button>
+        <button><i class="ri-delete-bin-line"></i></button>
+
+        
+    </div>
+    <form>
+        <div class="form-container">
+            <div class="title-area">
+                <label for="title">Title:</label>
+                <input type="text" id="title" name="title" placeholder="Material product title">
+            </div>
+        
+            <div class="color-area">
+                <label for="color">Color:</label>
+                <select id="color" name="color">
+                    <option value="red">White</option>
+                    <option value="blue">Blue</option>
+                    <option value="green">Green</option>
+                    <option value="yellow">Yellow</option>
+                </select>
+            </div>
+        
+            <div class="quantity-area">
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" placeholder="7">
+            </div>
+        
+            <div class="code-area">
+                <label for="code">Code:</label>
+                <input type="text" id="code" name="code" placeholder="QL-000001">
+            </div>
+        
+            <div class="currency-area">
+                <label for="currency">Currency:</label>
+                <select id="currency" name="currency">
+                    <option value="USD">US Dollar</option>
+                    <option value="EUR">Euro</option>
+                    <option value="GBP">British Pound</option>
+                    <option value="JPY">Japanese Yen</option>
+                </select>
+            </div>
+        
+            <div class="unit-measure-area">
+                <label for="unit-of-measure">Unit of Measure:</label>
+                <select id="unit-of-measure" name="unit-of-measure" placeholder="Please select your choise">
+                    <option value="meter">Meter</option>
+                    <option value="centimeter">Centimeter</option>
+                    <option value="inch">Inch</option>
+                    <option value="foot">Foot</option>
+                </select>
+            </div>
+        
+        
+            <div class="url-area">
+                <label for="url">URL:</label>
+                <input type="text" id="url" name="url" placeholder="https://ifoundthismaterialhere.com">
+            </div>
+        
+            <div class="placement-area">
+                <label for="placement">Placement:</label>
+                <input type="text" id="placement" name="placement" placeholder="A45 - Top Side">
+            </div>
+        
+            <div class="country-area">
+                <label for="country-of-origin">Country of Origin:</label>
+                <select id="country-of-origin" name="country-of-origin">
+                    <option value="usa">USA</option>
+                    <option value="canada">Canada</option>
+                    <option value="uk">UK</option>
+                    <option value="japan">Japan</option>
+                </select>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
